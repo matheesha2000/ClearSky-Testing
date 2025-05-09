@@ -78,4 +78,4 @@ This project includes both **manual** and **automated** testing to ensure system
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/air-quality-dashboard.git
+   git clone https://github.com/matheesha2000/ClearSky-Testing.git

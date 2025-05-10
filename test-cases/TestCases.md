@@ -38,3 +38,46 @@ Ensure that active alerts reflect real -time sensor data and preferred according
 
 - Alerts should update dynamically if sensor data changes.
 - Verify timestamp accuracy for alert generation.
+
+
+
+## Test Case 2 - Verify AQI Legend Ranges
+
+**Test Case ID:** TC_002
+
+**Test Title:** Verify AQI Legend Ranges Match EPA/WHO Standards
+
+**Test Description:**
+
+AQI categories ensure that EPA/WHO use the correct numeric boundaries according to the guidelines.
+
+**Test Steps:**
+
+1. Navigate to the dashboard and locate the **"AQI Legend"** section.
+2. Compare each displayed AQI range against official EPA/WHO standards:
+   - Good
+   - Moderate
+   - Unhealthy for Sensitive Groups
+   - Unhealthy
+
+**Test Data:**
+
+- **Good:** 0–50
+- **Moderate:** 51–100
+- **Unhealthy for Sensitive Groups:** 101–150
+- **Unhealthy:** 151–200
+
+**Expected Result:**
+
+All AQI ranges in the legend **exactly match** the EPA/WHO standard ranges.
+
+**Post-Condition:** None
+
+**Actual Result:** [To be filled after execution]
+
+**Status: [**Pass/Fail]
+
+**Notes:**
+
+- Critical for user safety and decision-making.
+- Flag discrepancies immediately if ranges deviate from standards.

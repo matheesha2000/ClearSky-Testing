@@ -1,8 +1,48 @@
 # **Test Cases for Real-Time Air Quality Monitoring Dashboard**
 
-## **Test Case 1 - Validate Active Alerts Accuracy**
+## Test Case 1 - **Admin Login Button Validation**
 
 **Test Case ID:** TC_001
+
+**Test Title:** Verify Admin Login button redirects to the correct login page.
+
+**Test Description:**
+
+This test ensures the "Admin Login" button is functional and directs users to the correct admin authentication page.
+
+**Test Steps:**
+
+1. Navigate to the ClearSky dashboard .
+2. Locate the "Admin Login" button .
+3. Click the button.
+
+**Test Data:**
+
+- **User Role:** Unauthenticated user.
+- **Expected Redirect URL:** **`https://clearsky.dizzpy.dev/admin/login.`**
+
+**Expected Result:**
+
+- The "Admin Login" button is visible and clickable.
+- Clicking it redirects to the correct admin login page (**`/admin/login`**).
+- The login page loads without errors.
+
+**Post-Condition:**
+
+- User lands on the admin login page.
+
+**Actual Result:** [Fill in after execution].
+
+**Status:** [Pass/Fail]
+
+**Notes:**
+
+- If the button is missing, verify permissions.
+- Test on both mobile and desktop views if applicable.
+
+## **Test Case 2 - Validate Active Alerts Accuracy**
+
+**Test Case ID:** TC_002
 
 **Test Title:** Verify Critical and Warning Alerts Display Correctly.
 
@@ -15,8 +55,8 @@ Ensure that active alerts reflect real -time sensor data and preferred according
 1. Navigate to the **"Active Alerts"** section.
 2. Verify the displayed alert messages.
 3. Cross-check alerts with live sensor data:
-    - **Critical Alert:** SNR-002
-    - **Warning Alert:** SNR-001
+   - **Critical Alert:** SNR-002
+   - **Warning Alert:** SNR-001
 
 **Test Data:**
 
@@ -40,44 +80,3 @@ Ensure that active alerts reflect real -time sensor data and preferred according
 - Verify timestamp accuracy for alert generation.
 
 
-
-## Test Case 2 - Verify AQI Legend Ranges
-
-**Test Case ID:** TC_002
-
-**Test Title:** Verify AQI Legend Ranges Match EPA/WHO Standards
-
-**Test Description:**
-
-AQI categories ensure that EPA/WHO use the correct numeric boundaries according to the guidelines.
-
-**Test Steps:**
-
-1. Navigate to the dashboard and locate the **"AQI Legend"** section.
-2. Compare each displayed AQI range against official EPA/WHO standards:
-   - Good
-   - Moderate
-   - Unhealthy for Sensitive Groups
-   - Unhealthy
-
-**Test Data:**
-
-- **Good:** 0–50
-- **Moderate:** 51–100
-- **Unhealthy for Sensitive Groups:** 101–150
-- **Unhealthy:** 151–200
-
-**Expected Result:**
-
-All AQI ranges in the legend **exactly match** the EPA/WHO standard ranges.
-
-**Post-Condition:** None
-
-**Actual Result:** [To be filled after execution]
-
-**Status: [**Pass/Fail]
-
-**Notes:**
-
-- Critical for user safety and decision-making.
-- Flag discrepancies immediately if ranges deviate from standards.
